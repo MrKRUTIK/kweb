@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<style>
+    header{
+        text-align: center;
+      color: #eadfdf;
+      background-color:rgb(0, 0, 0);
+     text-shadow:3px 3px 9px #88c47d;
+      position: relative;
+    }
+
+    p,b{
+        text-align: center;
+        color: #0f0f0f;
+    }
+
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    nav {
+
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .home-toggle {
+     
+      font-size: 1.1em;
+      color: #000000;
+      cursor: pointer;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      transition: text-shadow 0.3s ease;
+    }
+
+
+    #menuToggle {
+      display: none;
+    }
+
+    .menu-options {
+      display: none;
+      flex-direction: row;
+      gap: 1em;
+      animation: fadeIn 0.4s ease;
+    }
+
+    #menuToggle:checked + label + .menu-options {
+      display: flex;
+    }
+
+    .menu-options a {
+      color: #136b16;
+      text-decoration: none;
+      padding: 0.5em 0.8em;
+       transition: text-shadow 0.3s ease;
+    }
+
+    .menu-options a:hover {
+    text-shadow: 3px 4px 5px #000000;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-options {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+
+</style>
+
+<body>
+    
+
+
+<section>
+    <header>
+        <br>
+
+<nav>
+    
+    <input type="checkbox" id="menuToggle" hidden>
+   
+   <label for="menuToggle" class="home-toggle">
+  <div class="hamburger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</label>
+   
+    <div class="menu-options">
+        <a href="index.html">🏠HOME</a>
+      <a href="project.html">📁 PROJECT</a>
+      <a href="contact.html">✉ CONTACT</a>
+      <a href="#">👥 Team</a>
+    </div>
+  </nav>
+
+    <h1>[ PROJECTS ]</h1>
+    <br>
+    </header>
+    <br>
+<h3><b>Hey All, I Have Created A Project, If You Need The Source Code Then DM Me.</b></h3>
+
+<section class="blurred-background">
+<div class="project-gallery">
+  <div class="project-card">
+    <div class="project-image" style="background-image: url('images/project1.png');"></div>
+    <div class="project-content">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase your skills, projects, and resume.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image" style="background-image: url('images/project2.png');"></div>
+    <div class="project-content">
+      <h3>Landing Page</h3>
+      <p>Responsive landing page for product marketing or brand promotion.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image" style="background-image: url('images/project3.png');"></div>
+    <div class="project-content">
+      <h3>Dashboard UI</h3>
+      <p>Interactive admin dashboard with charts, stats, and management tools.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image" style="background-image: url('images/project4.jpg');"></div>
+    <div class="project-content">
+      <h3>SoftWare UX</h3>
+      <p>Interactive admin dashboard with charts, stats, and management tools.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+</body>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const itemWidth = 320; // cover-item width + margin
+
+  function scrollCarousel(direction) {
+    carousel.scrollBy({
+      left: direction * itemWidth,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+</html>

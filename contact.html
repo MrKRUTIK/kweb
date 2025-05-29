@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<style>
+    header {
+      background-color:ghostwhite;
+      text-shadow:3px 3px 9px #267219;
+      text-align: center;
+      color: #000000;
+      position: relative;
+    }
+
+    h3,b{
+      text-align: center;
+      
+    }
+
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    nav {
+
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .home-toggle {
+     
+      font-size: 1.1em;
+      color: #000000;
+      cursor: pointer;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      transition: text-shadow 0.3s ease;
+    }
+
+    .home-toggle:hover {
+      text-shadow: 0 0 10px #00ffee;
+    }
+
+    #menuToggle {
+      display: none;
+    }
+
+    .menu-options {
+      display: none;
+      flex-direction: row;
+      gap: 1em;
+      animation: fadeIn 0.4s ease;
+    }
+
+    #menuToggle:checked + label + .menu-options {
+      display: flex;
+    }
+
+    .menu-options a {
+      color: #136b16;
+      text-decoration: none;
+      padding: 0.5em 0.8em;
+       transition: text-shadow 0.3s ease;
+    }
+
+    .menu-options a:hover {
+    text-shadow: 3px 6px 5px #000000;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-options {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+
+</style>
+
+<body>
+
+</section>
+<header>
+<br>
+    
+<nav>
+    
+    <input type="checkbox" id="menuToggle" hidden>
+   
+   <label for="menuToggle" class="home-toggle">
+  <div class="hamburger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</label>
+   
+    <div class="menu-options">
+      <a href="index.html">🏠HOME</a>
+      <a href="project.html">📁 PROJECT</a>
+      <a href="contact.html">✉ CONTACT</a>
+      <a href="#">👥 Team</a>
+    </div>
+  </nav>
+
+    <h2>[ CONTACT ]</h2>
+<br>
+</header>
+    <h3>MAIL :<b>mrkrutik28@gmail.com</b></h3>
+    <div class="social-icons">
+      <a href="https://facebook.com/machhi.c.7" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/MrKRUTIK" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/mr-krutik" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/mr_krutik___" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</body>
+</html>
